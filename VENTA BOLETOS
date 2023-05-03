@@ -1,0 +1,623 @@
+//Sebastian 
+//Demy
+#include <iostream>
+using namespace std;
+int opcion;
+int opcion2;
+int opcion3;
+int opcion4;
+int opcion5;
+int opcion6;
+int opcion7;
+int pago, pago1,pago2, pago3, pago4;
+int result;
+int entrada;
+int entrada2;
+int result1, result2, result3, result4, result5, result6;
+
+int a = 0;
+int main()
+
+{
+    cout << "bienvenid@ al cine " << endl << "que pelicula desea ver? " << endl;
+    cout << "1. Super Mario Bros la pelicula " << endl;
+    cout << "2. Jonh Wick 4" << endl;
+    cout << "3. El exorcista del papa " << endl;
+    cout << "4. Avatar : El camino del agua"<<endl;
+    cout << "5. Air : la historia detras del logo" << endl;
+    cout << "6. suzume" << endl;
+    cin >> opcion;
+
+    switch (opcion)
+    {
+    case 1:
+        cout << "Elija la sala " << endl;
+        cout << "1. Macro xc" << endl;
+        cout << "2. 3D " << endl;
+        cout << "3. Sala Normal " << endl;
+        cout << "4. Sala Junior " << endl;
+        cin >> opcion2;
+        switch (opcion2) { //switch comienzo opcion2
+        case 1:
+            cout << "cuantas entradas quiere comprar? " << endl;
+            cin >> entrada;
+            pago1 = entrada * 45;
+            result1 = pago1 + pago2 +pago3 + pago4;
+            cout << "total a pagar es: " << result1 << endl;
+            cout << "desea agregar otra entrada" << endl;
+            cout << "1:si" << endl << "culquier caracter para: no" << endl;
+            cin >> entrada2;
+            if (entrada2 != 1)
+            {
+                cout << "gracias por visitarnos" << endl;
+            }
+
+            else
+            {
+
+                return main();
+
+            }
+            break;
+            //termina 
+           
+        case 2:
+            cout << "cuantas entradas quiere comprar? " << endl;
+            cin >> entrada;
+            pago2 = entrada * 48;
+            result1 = pago1 + pago2 + pago3 + pago4;
+            cout << "total a pagar es: " << result1 << endl;
+            cout << "desea agregar otra entrada" << endl;
+            cout << "1:si" << endl << "culquier caracter para: no" << endl;
+            cin >> entrada2;
+            if (entrada2 != 1)
+            {
+                cout << "gracias por visitarnos" << endl;
+            }
+
+            else
+            {
+
+                return main();
+               
+            }
+            break;
+        case 3:
+            cout << "cuantas entradas quiere comprar? " << endl;
+            cin >> entrada;
+            pago3 = entrada * 40;
+            result1 = pago1 + pago2 + pago3 + pago4;
+            cout << "total a pagar es: " << result1 << endl;
+            cout << "desea agregar otra entrada" << endl;
+            cout << "1:si" << endl << "culquier caracter para: no" << endl;
+            cin >> entrada2;
+            if (entrada2 != 1)
+            {
+                cout << "gracias por visitarnos" << endl;
+            }
+
+            else
+            {
+
+                return main();
+
+            }
+           
+            break;
+        case 4:
+            cout << "cuantas entradas quiere comprar? " << endl;
+            cin >> entrada;
+            pago4 = entrada * 30;
+            result1 = pago1 + pago2 + pago3 + pago4;
+            cout << "total a pagar es: " << result1 << endl;
+            cout << "desea agregar otra entrada" << endl;
+            cout << "1:si" << endl << "culquier caracter para: no" << endl;
+            cin >> entrada2;
+            if (entrada2 != 1)
+            {
+                cout << "gracias por visitarnos" << endl;
+            }
+
+            else
+            {
+
+                return main();
+
+            }
+            break;
+        default:
+            cout << "no se ingresio ninguna opcion " << endl;
+            cout << "desea regresar al menu" << endl << "1:si" << endl << "0 :no" << endl;
+            cin >> a;
+            if (a == 1)
+            {
+                system("cls");
+                return main();
+            }
+            else
+            {
+                cout << "Gracias por su visita ";
+            }
+
+
+            break;
+            result = result1 + result2 + result3 + result4 + result5 + result6;
+            cout << "el total por todas las peliculas es " << result;
+        }
+
+        break;
+        //fin switch 2
+
+        break;
+    case 2:
+        cout << "Elija la sala " << endl;
+        cout << "1. Macro xc" << endl;
+        cout << "2. 3D " << endl;
+        cout << "3. Sala Normal " << endl;
+        cin >> opcion3;
+        switch (opcion3) { //switch comienzo opcion2
+        case 1:
+            cout << "cuantas entradas quiere comprar? " << endl;
+            cin >> entrada;
+            pago1 = entrada * 45;
+            result2 = pago1 + pago2 + pago3;
+            cout << "total a pagar es: " << result2 << endl;
+            cout << "desea agregar otra entrada" << endl;
+            cout << "1:si" << endl << "culquier caracter para: no" << endl;
+            cin >> entrada2;
+            if (entrada2 != 1)
+            {
+                cout << "gracias por visitarnos" << endl;
+            }
+
+            else
+            {
+
+                return main();
+
+            }
+            break;
+        case 2:
+            cout << "cuantas entradas quiere comprar? " << endl;
+            cin >> entrada;
+            pago2 = entrada * 48;
+            result2 = pago1 + pago2 + pago3;
+            cout << "total a pagar es: " << result2 << endl;
+            cout << "desea agregar otra entrada" << endl;
+            cout << "1:si" << endl << "culquier caracter para: no" << endl;
+            cin >> entrada2;
+            if (entrada2 != 1)
+            {
+                cout << "gracias por visitarnos" << endl;
+            }
+
+            else
+            {
+
+                return main();
+
+            }
+            break;
+        case 3:
+            cout << "cuantas entradas quiere comprar? " << endl;
+            cin >> entrada;
+            pago3 = entrada * 40;
+            result2 = pago1 + pago2 + pago3;
+            cout << "total a pagar es: " << result2 << endl;
+            cout << "desea agregar otra entrada" << endl;
+            cout << "1:si" << endl << "culquier caracter para: no" << endl;
+            cin >> entrada2;
+            if (entrada2 != 1)
+            {
+                cout << "gracias por visitarnos" << endl;
+            }
+
+            else
+            {
+
+                return main();
+
+            }
+            break;
+        default:
+            cout << "no se ingresio ninguna opcion " << endl;
+            cout << "desea regresar al menu" << endl << "1:si" << endl << "0 :no" << endl;
+            cin >> a;
+            if (a == 1)
+            {
+                system("cls");
+                return main();
+            }
+            else
+            {
+                cout << "Gracias por su visita ";
+            }
+
+
+            break;
+            result = result1 + result2 + result3 + result4 + result5 + result6;
+            cout << "el total por todas las peliculas es " << result;
+        }
+        break;
+            //termina 
+    case 3:
+        cout << "Elija la sala " << endl;
+        cout << "1. Macro xc" << endl;
+        cout << "2. 3D " << endl;
+        cout << "3. Sala Normal " << endl;
+        cin >> opcion4;
+        switch (opcion4) { //switch comienzo opcion2
+        case 1:
+            cout << "cuantas entradas quiere comprar? " << endl;
+            cin >> entrada;
+            pago1 = entrada * 45;
+            result3 = pago1 + pago2 + pago3;
+            cout << "total a pagar es: " << result3 << endl;
+            cout << "desea agregar otra entrada" << endl;
+            cout << "1:si" << endl << "culquier caracter para: no" << endl;
+            cin >> entrada2;
+            if (entrada2 != 1)
+            {
+                cout << "gracias por visitarnos" << endl;
+            }
+
+            else
+            {
+
+                return main();
+
+            }
+            break;
+        case 2:
+            cout << "cuantas entradas quiere comprar? " << endl;
+            cin >> entrada;
+            pago2 = entrada * 48;
+            result3 = pago1 + pago2 + pago3;
+            cout << "total a pagar es: " << result3 << endl;
+            cout << "desea agregar otra entrada" << endl;
+            cout << "1:si" << endl << "culquier caracter para: no" << endl;
+            cin >> entrada2;
+            if (entrada2 != 1)
+            {
+                cout << "gracias por visitarnos" << endl;
+            }
+
+            else
+            {
+
+                return main();
+
+            }
+            break;
+        case 3:
+            cout << "cuantas entradas quiere comprar? " << endl;
+            cin >> entrada;
+            pago3 = entrada * 40;
+            result3 = pago1 + pago2 + pago3;
+            cout << "total a pagar es: " << result3 << endl;
+            cout << "desea agregar otra entrada" << endl;
+            cout << "1:si" << endl << "culquier caracter para: no" << endl;
+            cin >> entrada2;
+            if (entrada2 != 1)
+            {
+                cout << "gracias por visitarnos" << endl;
+            }
+
+            else
+            {
+
+                return main();
+
+            }
+            break;
+        default:
+            cout << "no se ingresio ninguna opcion " << endl;
+            cout << "desea regresar al menu" << endl << "1:si" << endl << "0 :no" << endl;
+            cin >> a;
+            if (a == 1)
+            {
+                system("cls");
+                return main();
+            }
+            else
+            {
+                cout << "Gracias por su visita ";
+            }
+
+
+            break;
+            result = result1 + result2 + result3 + result4 + result5 + result6;
+            cout << "el total por todas las peliculas es " << result;
+        }
+        break;
+    case 4:
+        cout << "Elija la sala " << endl;
+        cout << "1. Macro xc" << endl;
+        cout << "2. 3D " << endl;
+        cout << "3. Sala Normal " << endl;
+        cin >> opcion5;
+        switch (opcion5) { //switch comienzo opcion2
+        case 1:
+            cout << "cuantas entradas quiere comprar? " << endl;
+            cin >> entrada;
+            pago1 = entrada * 45;
+            result4 = pago1 + pago2 + pago3;
+            cout << "total a pagar es: " << result4 << endl;
+            cout << "desea agregar otra entrada" << endl;
+            cout << "1:si" << endl << "culquier caracter para: no" << endl;
+            cin >> entrada2;
+            if (entrada2 != 1)
+            {
+                cout << "gracias por visitarnos" << endl;
+            }
+
+            else
+            {
+
+                return main();
+
+            }
+            break;
+        case 2:
+            cout << "cuantas entradas quiere comprar? " << endl;
+            cin >> entrada;
+            pago2 = entrada * 48;
+            result4 = pago1 + pago2 + pago3;
+            cout << "total a pagar es: " << result4 << endl;
+            cout << "desea agregar otra entrada" << endl;
+            cout << "1:si" << endl << "culquier caracter para: no" << endl;
+            cin >> entrada2;
+            if (entrada2 != 1)
+            {
+                cout << "gracias por visitarnos" << endl;
+            }
+
+            else
+            {
+
+                return main();
+
+            }
+            break;
+        case 3:
+            cout << "cuantas entradas quiere comprar? " << endl;
+            cin >> entrada;
+            pago3 = entrada * 40;
+            result4 = pago1 + pago2 + pago3;
+            cout << "total a pagar es: " << result4 << endl;
+            cout << "desea agregar otra entrada" << endl;
+            cout << "1:si" << endl << "culquier caracter para: no" << endl;
+            cin >> entrada2;
+            if (entrada2 != 1)
+            {
+                cout << "gracias por visitarnos" << endl;
+            }
+
+            else
+            {
+
+                return main();
+
+            }
+            break;
+        default:
+            cout << "no se ingresio ninguna opcion " << endl;
+            cout << "desea regresar al menu" << endl << "1:si" << endl << "0 :no" << endl;
+            cin >> a;
+            if (a == 1)
+            {
+                system("cls");
+                return main();
+            }
+            else
+            {
+                cout << "Gracias por su visita ";
+            }
+
+
+            break;
+            result = result1 + result2 + result3 + result4 + result5 + result6;
+            cout << "el total por todas las peliculas es " << result;
+        }
+        break;
+    case 5:
+        cout << "Elija la sala " << endl;
+        cout << "1. Macro xc" << endl;
+        cout << "2. 3D " << endl;
+        cout << "3. Sala Normal " << endl;
+        cin >> opcion6;
+        switch (opcion6) { //switch comienzo opcion2
+        case 1:
+            cout << "cuantas entradas quiere comprar? " << endl;
+            cin >> entrada;
+            pago1 = entrada * 45;
+            result5 = pago1 + pago2 + pago3;
+            cout << "total a pagar es: " << result5 << endl;
+            cout << "desea agregar otra entrada" << endl;
+            cout << "1:si" << endl << "culquier caracter para: no" << endl;
+            cin >> entrada2;
+            if (entrada2 != 1)
+            {
+                cout << "gracias por visitarnos" << endl;
+            }
+
+            else
+            {
+
+                return main();
+
+            }
+            break;
+        case 2:
+            cout << "cuantas entradas quiere comprar? " << endl;
+            cin >> entrada;
+            pago2 = entrada * 48;
+            result5 = pago1 + pago2 + pago3;
+            cout << "total a pagar es: " << result5 << endl;
+            cout << "desea agregar otra entrada" << endl;
+            cout << "1:si" << endl << "culquier caracter para: no" << endl;
+            cin >> entrada2;
+            if (entrada2 != 1)
+            {
+                cout << "gracias por visitarnos" << endl;
+            }
+
+            else
+            {
+
+                return main();
+
+            }
+            break;
+        case 3:
+            cout << "cuantas entradas quiere comprar? " << endl;
+            cin >> entrada;
+            pago3 = entrada * 40;
+            result5 = pago1 + pago2 + pago3;
+            cout << "total a pagar es: " << result5 << endl;
+            cout << "desea agregar otra entrada" << endl;
+            cout << "1:si" << endl << "culquier caracter para: no" << endl;
+            cin >> entrada2;
+            if (entrada2 != 1)
+            {
+                cout << "gracias por visitarnos" << endl;
+            }
+
+            else
+            {
+
+                return main();
+
+            }
+            break;
+        default:
+            cout << "no se ingresio ninguna opcion " << endl;
+            cout << "desea regresar al menu" << endl << "1:si" << endl << "0 :no" << endl;
+            cin >> a;
+            if (a == 1)
+            {
+                system("cls");
+                return main();
+            }
+            else
+            {
+                cout << "Gracias por su visita ";
+            }
+
+
+            break;
+            result = result1 + result2 + result3 + result4 + result5 + result6;
+            cout << "el total por todas las peliculas es " << result;
+        }
+
+        break;
+    case 6:
+        cout << "Elija la sala " << endl;
+        cout << "1. Macro xc" << endl;
+        cout << "2. 3D " << endl;
+        cout << "3. Sala Normal " << endl;
+        cin >> opcion7;
+        switch (opcion7) { //switch comienzo opcion2
+        case 1:
+            cout << "cuantas entradas quiere comprar? " << endl;
+            cin >> entrada;
+            pago1 = entrada * 45;
+            result6 = pago1 + pago2 + pago3;
+            cout << "total a pagar es: " << result6 << endl;
+            cout << "desea agregar otra entrada" << endl;
+            cout << "1:si" << endl << "culquier caracter para: no" << endl;
+            cin >> entrada2;
+            if (entrada2 != 1)
+            {
+                cout << "gracias por visitarnos" << endl;
+            }
+
+            else
+            {
+
+                return main();
+
+            }
+            break;
+        case 2:
+            cout << "cuantas entradas quiere comprar? " << endl;
+            cin >> entrada;
+            pago2 = entrada * 48;
+            result6 = pago1 + pago2 + pago3;
+            cout << "total a pagar es: " << result6 << endl;
+            cout << "desea agregar otra entrada" << endl;
+            cout << "1:si" << endl << "culquier caracter para: no" << endl;
+            cin >> entrada2;
+            if (entrada2 != 1)
+            {
+                cout << "gracias por visitarnos" << endl;
+            }
+
+            else
+            {
+
+                return main();
+
+            }
+            break;
+        case 3:
+            cout << "cuantas entradas quiere comprar? " << endl;
+            cin >> entrada;
+            pago3 = entrada * 40;
+            result6 = pago1 + pago2 + pago3;
+            cout << "total a pagar es: " << result6 << endl;
+            cout << "desea agregar otra entrada" << endl;
+            cout << "1:si" << endl << "culquier caracter para: no" << endl;
+            cin >> entrada2;
+            if (entrada2 != 1)
+            {
+                cout << "gracias por visitarnos" << endl;
+            }
+
+            else
+            {
+
+                return main();
+
+            }
+            break;
+        default:
+            cout << "no se ingresio ninguna opcion " << endl;
+            cout << "desea regresar al menu" << endl << "1:si" << endl << "0 :no" << endl;
+            cin >> a;
+            if (a == 1)
+            {
+                system("cls");
+                return main();
+            }
+            else
+            {
+                cout << "Gracias por su visita ";
+            }
+
+
+            break;
+        }
+        result = result1 + result2 + result3 + result4 + result5 + result6;
+        cout << "el total por todas las peliculas es " << result;
+        break;
+    default:
+        cout << "no se ingresio ninguna opcion " << endl;
+        cout << "desea regresar al menu" << endl << "1:si" << endl << "0 :no" << endl;
+        cin >> a;
+        if (a == 1)
+        {
+            system("cls");
+            return main();
+        }
+        else
+        {
+            cout << "Gracias por su visita ";
+        }
+
+
+        break;
+    }
+
+
+}
